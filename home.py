@@ -35,3 +35,6 @@ if option == 1:
     print("Total:", quantity[0])
     print("Female:", quantity[1])
     print("Male:", quantity[2])
+
+elif option == 2:
+    
