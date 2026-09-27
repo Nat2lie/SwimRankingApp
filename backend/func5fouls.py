@@ -1,5 +1,4 @@
 athletelist = [("A",34),("B",36),("C",38)]
-athletefoul = input("Which athlete committed a foul? A/B/C: ")
 def fouls(athletes, athlete):
     checkfoul = athletes
     fouled = athlete
@@ -14,12 +13,14 @@ def fouls(athletes, athlete):
             break
     return(checkfoul)
 
-results = fouls(athletelist, athletefoul)
-print("\n Rankings")
-for i in range(len(results)):
-    if results[i][0] == athletefoul:
-        print(i+1, results[i][0], "DQ")
-    else:
-        print(i+1, results[i][0], results[i][1])
+if __name__ == "__main__":
+    athletefoul = input("Which athlete committed a foul? A/B/C: ")
+    results = fouls(athletelist, athletefoul)
+    print("\n Rankings")
+    for i in range(len(results)):
+        if results[i][0] == athletefoul:
+            print(i+1, results[i][0], "DQ")
+        else:
+            print(i+1, results[i][0], results[i][1])
             
         
