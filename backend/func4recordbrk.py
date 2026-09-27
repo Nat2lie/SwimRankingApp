@@ -1,10 +1,5 @@
 athleteslist = []
 record = [45.3,39.6,32.9,30.4,27.89]
-athletename = input("Enter athlete name: ")
-athleteage = int(input("Enter athlete age: "))
-athletetime = float(input("Enter athlete time: "))
-athleteslist.append([athletename, athleteage, athletetime])
-print(athleteslist)
 def newrecord(time, records):
     update = time
     check = records
@@ -31,8 +26,15 @@ def newrecord(time, records):
                 print("New Record!")
     return(check)
 
-update_record = newrecord(athleteslist, record)
-print(update_record)
+if __name__ == "__main__":
+    athletename = input("Enter athlete name: ")
+    athleteage = int(input("Enter athlete age: "))
+    athletetime = float(input("Enter athlete time: "))
+    athleteslist.append([athletename, athleteage, athletetime])
+    print(athleteslist)
+
+    update_record = newrecord(athleteslist, record)
+    print(update_record)
 
 
 

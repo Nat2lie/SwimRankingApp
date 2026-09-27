@@ -1,0 +1,15 @@
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+# Native widgets and data grids use these. theme.css repaints everything else,
+# and in light mode it flips the grids with a CSS filter.
+[theme]
+base = "dark"
+primaryColor = "#5fd0de"
+backgroundColor = "#18212b"
+secondaryBackgroundColor = "#212d39"
+textColor = "#eaf4f8"
+font = "sans serif"

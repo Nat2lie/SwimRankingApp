@@ -18,8 +18,9 @@ def point(athletes):
             sorted[i][1] = sorted[i][1] + 1
     return (sorted)
 
-print("\n Ranking")
-result=point(athletelist)
-for i in range(len(result)):
-    print(f"{i+1} {result[i][0]} {result[i][1]}")
+if __name__ == "__main__":
+    print("\n Ranking")
+    result=point(athletelist)
+    for i in range(len(result)):
+        print(f"{i+1} {result[i][0]} {result[i][1]}")
 

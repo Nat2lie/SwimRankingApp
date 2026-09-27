@@ -31,27 +31,28 @@ def identical_times(athletes):
     return(iden_ath)
 
 medals = ["Gold", "Silver", "Bronze"]
-results = identical_times(athletelist)
-print(results)
-print()
-f = results[0][1]
-s = 0
-t = 0
+if __name__ == "__main__":
+    results = identical_times(athletelist)
+    print(results)
+    print()
+    f = results[0][1]
+    s = 0
+    t = 0
 
-for i in range(len(results)):
-    if results[i][1] == f:
-        print(results[i][0], "GOLD")
-    
-
-    elif results[i][1] > f and s == 0:
-        s = results[i][1]
-        print(results[i][0], "Silver")
-    elif results[i][1] == s:
-        print(results[i][0], "Silver")
+    for i in range(len(results)):
+        if results[i][1] == f:
+            print(results[i][0], "GOLD")
 
 
-    elif results[i][1] > s and t == 0:
-        t = results[i][1]
-        print(results[i][0], "Bronze")
-    elif results[i][1] == t:
-        print(results[i][0], "Bronze")
+        elif results[i][1] > f and s == 0:
+            s = results[i][1]
+            print(results[i][0], "Silver")
+        elif results[i][1] == s:
+            print(results[i][0], "Silver")
+
+
+        elif results[i][1] > s and t == 0:
+            t = results[i][1]
+            print(results[i][0], "Bronze")
+        elif results[i][1] == t:
+            print(results[i][0], "Bronze")
